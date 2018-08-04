@@ -3,12 +3,17 @@
       <title>Login Page</title>
       </head>
       <body>
-               <form>
+               <form action = "registration.html">
                   <label>UserName  :</label><input type = "text" name = "email_id"/><br /><br />
                   <label>Password  :</label><input type = "password" name = "password"/><br/><br />
-                  <input type="submit" name="submit" value="submit">
+                  <input type="submit" name="submit" value="login" onclick ="javascript:login()">
                </form>
       </body>
 </html>
-
-
+<script>
+    function login(){
+          if(confirm('sure to login')){
+            window.location.href ='registration.html';
+      }
+   }
+</script>  
