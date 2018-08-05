@@ -8,5 +8,7 @@ if(isset($_REQUEST['submit'])!=''){
             echo "please fill the empty field.";
         }else{
             $sql="INSERT INTO login (name,email,password) values ('".$_REQUEST['name']."','".$_REQUEST['email']."', '".$_REQUEST['password']."')";
+           }
+}
 ?>
 
